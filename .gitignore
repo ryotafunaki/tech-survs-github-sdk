@@ -1,0 +1,7 @@
+.vscode/
+.vs/
+
+**/*.log
+**/.*.log
+
+tech-survs-github-sdk
