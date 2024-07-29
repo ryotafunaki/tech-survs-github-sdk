@@ -1,10 +1,12 @@
 # Go Project Repository
 
-This repository is a Go Project.
+This repository is a technical survey of the GitHub SDK.
 
 ## Overview
 
 ## Requirements
+
+- Go 1.20 and later
 
 ## Container image info
 
@@ -12,26 +14,20 @@ This repository is a Go Project.
 
 ### Execution on local machine
 
-1.  Start the application
+1.  Start the Dev Container
+1. Install the dependencies
     ```bash
-    go run main.go
+    go mod tidy
     ```
-
-### Execution on Docker
-
-1.  Start the application
+1.  Build the application
     ```bash
-    docker compose up -d
+    go build
     ```
-
-### Execution on Kubernetes
-
-1. Register the Helm repository
+1.  Execute the application
     ```bash
-    helm repo add rfull-development http://charts.ngv.jp
-    helm repo update
+    ./tech-survs-github-sdk -o <owner> -r <repository>
     ```
-1. Deploy the application
+    e.g.
     ```bash
-    helm install rfull-development/<release-name> --namespace <namespace> --create-namespace
+    ./tech-survs-github-sdk -o octokit -r go-sdk
     ```
