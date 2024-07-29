@@ -1,4 +1,4 @@
-# Go Project Repository
+# GitHub SDK Technical Survey Repository
 
 This repository is a technical survey of the GitHub SDK.
 
