@@ -2,7 +2,7 @@ module github.com/ryotafunaki/tech-survs-github-sdk
 
 go 1.22.5
 
-require github.com/octokit/go-sdk v0.0.25
+require github.com/octokit/go-sdk v0.0.26
 
 require (
 	github.com/cjlapao/common-go v0.0.39 // indirect
